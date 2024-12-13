@@ -7,5 +7,24 @@
 
 #thumb-container {
   background-color: lightblue;
-  height: 200px;
+  justify-self: center;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-top: 0.25rem;
+}
+
+.thumbnailImg {
+  min-width: 1rem;
+  max-width: 10rem;
+  height: 5rem;
 }
