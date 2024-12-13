@@ -66,4 +66,29 @@ function createThumbs(thumbsArray) {
 
 createThumbs(thumbs);
 
-// function createBigImageHandler(bigImage) {}
+const thumb1 = document.getElementById("standing");
+const thumb2 = document.getElementById("closeup");
+const thumb3 = document.getElementById("grass");
+const thumb4 = document.getElementById("leaves");
+const thumb5 = document.getElementById("chew");
+const thumb6 = document.getElementById("stick");
+const thumb7 = document.getElementById("mother");
+const thumb8 = document.getElementById("baby");
+
+bigImageContainer = document.getElementById("big-image-container");
+thumb1.addEventListener("click", bigImageHandler(0));
+thumb2.addEventListener("click", bigImageHandler(1));
+thumb3.addEventListener("click", bigImageHandler(2));
+thumb4.addEventListener("click", bigImageHandler(3));
+thumb5.addEventListener("click", bigImageHandler(4));
+thumb6.addEventListener("click", bigImageHandler(5));
+thumb7.addEventListener("click", bigImageHandler(6));
+thumb8.addEventListener("click", bigImageHandler(7));
+
+function bigImageHandler(imgNum) {
+  bigImageContainer.innerHTML = null;
+  let bigImage = document.createElement("img");
+  bigImage.src = thumbs[imgNum].src;
+  bigImage.alt = thumbs[imgNum].alt;
+  bigImage.className = "bigImg";
+}
