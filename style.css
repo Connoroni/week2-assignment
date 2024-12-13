@@ -1,0 +1,11 @@
+/* Mini reset here, thank you mini reset */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+* {
+  background-color: peachpuff;
+}
+
+#thumb-container {
+  background-color: lightblue;
+  height: 200px;
+}
