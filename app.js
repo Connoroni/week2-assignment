@@ -76,7 +76,8 @@ const thumb6 = document.getElementById("stick");
 const thumb7 = document.getElementById("mother");
 const thumb8 = document.getElementById("baby");
 
-bigImageContainer = document.getElementById("big-image-container");
+let currentImage = null;
+let bigImageContainer = document.getElementById("big-image-container");
 thumb1.addEventListener("click", () => {
   bigImageHandler(0);
 });
@@ -106,9 +107,35 @@ function bigImageHandler(imgNum) {
   bigImageContainer.innerHTML = null;
   let bigImage = document.createElement("img");
   bigImage.src = thumbs[imgNum].src;
-  console.log("test");
-  console.log(bigImage.src);
+  // console.log("test");
+  // console.log(bigImage.src);
   bigImage.alt = thumbs[imgNum].alt;
   bigImage.className = "bigImg";
   bigImageContainer.appendChild(bigImage);
+  currentImage = imgNum;
+  console.log(currentImage);
+}
+
+const leftButton = document.getElementById("left-button");
+const rightButton = document.getElementById("right-button");
+leftButton.addEventListener("click", prevImage);
+rightButton.addEventListener("click", nextImage);
+
+function prevImage() {
+  let prev = currentImage - 1;
+  if (prev === -1) {
+    currentImage = 7;
+  } else {
+    currentImage = prev;
+  }
+  bigImageHandler(currentImage);
+}
+function nextImage() {
+  let next = currentImage + 1;
+  if (next === 8) {
+    currentImage = 0;
+  } else {
+    currentImage = next;
+  }
+  bigImageHandler(currentImage);
 }
