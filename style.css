@@ -67,8 +67,8 @@
   z-index: 2;
   background-color: transparent;
   border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2em;
+  height: 2em;
   position: fixed;
   border: grey 1px dashed;
   font-size: 1.75rem;
