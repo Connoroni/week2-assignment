@@ -70,8 +70,9 @@
   width: 2.5rem;
   height: 2.5rem;
   position: fixed;
-  border: grey 1px solid;
+  border: grey 1px dashed;
   font-size: 1.75rem;
+  cursor: pointer;
 }
 #left-button {
   top: 50vh;
@@ -80,6 +81,12 @@
 #right-button {
   top: 50vh;
   right: 10vw;
+}
+.lr-button:focus {
+  border: grey 1px solid;
+}
+.lr-button:hover {
+  border: grey 1px solid;
 }
 
 @media (max-width: 840px) {
@@ -112,6 +119,7 @@
   #thumb-container {
     width: 100%;
     padding: 0.05rem;
+    justify-content: space-evenly;
     gap: 0;
   }
   .thumbnailImg {
@@ -123,16 +131,10 @@
   .thumbnailImg {
     width: 50px;
   }
-  #big-image-container {
-    min-width: 600px;
-    max-width: 840px;
-    min-height: none;
-    max-height: auto;
-  }
-  .bigImg {
-    min-width: none;
-    max-width: inherit;
-    min-height: inherit;
-    max-height: inherit;
+}
+
+@media (max-width: 375px) {
+  .thumbnailImg {
+    width: 40px;
   }
 }

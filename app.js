@@ -103,6 +103,47 @@ thumb8.addEventListener("click", () => {
   bigImageHandler(7);
 });
 
+thumb1.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(0);
+  }
+});
+thumb2.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(1);
+  }
+});
+thumb3.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(2);
+  }
+});
+thumb4.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(3);
+  }
+});
+thumb5.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(4);
+  }
+});
+thumb6.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(5);
+  }
+});
+thumb7.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(6);
+  }
+});
+thumb8.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    bigImageHandler(7);
+  }
+});
+
 function bigImageHandler(imgNum) {
   bigImageContainer.innerHTML = null;
   let bigImage = document.createElement("img");
