@@ -69,6 +69,7 @@
   border-radius: 100%;
   width: 2em;
   height: 2em;
+  text-align: center;
   position: fixed;
   border: grey 1px dashed;
   font-size: 1.75rem;
@@ -130,6 +131,11 @@
 @media (max-width: 425px) {
   .thumbnailImg {
     width: 50px;
+  }
+  .lr-button {
+    width: 1em;
+    height: 1em;
+    font-size: 0.75rem;
   }
 }
 
