@@ -15,6 +15,8 @@ My main struggle with this assignment was the jargon used in online forums when 
 
 I think my JS is probably very inefficient, but the only way I could understand to keep the thumbnails linked to the appropriate positions in the array was to create the thumb variables (thumb1, thumb2, etc.) but I had to then add 2 event listeners to each of these to make them work as intended. After looking at Manny's example website to solve my keydown problem, I realised I could've used a for of loop which would've meant the index was already stored in a variable to use elsewhere. I didn't realise this until I'd already written about 99% of my code, so I'm not going to change it for this assignment.
 
+There's one specific issue I'd like advice on if possible: for some reason the big image isn't centered in Firefox (my usual browser) but it is in Chrome (which I was working in for the assignment for the better devtools) both in the deployment and the localhost. I don't know why it's doing this, because MDN tells me that both browsers support justify-self.
+
 **Sources**
 
 - Issues with event listeners firing immediately - https://stackoverflow.com/questions/35667267/addeventlistenerclick-firing-immediately https://stackoverflow.com/questions/10000083/javascript-event-handler-with-parameters
