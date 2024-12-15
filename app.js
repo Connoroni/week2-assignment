@@ -59,6 +59,7 @@ function createThumbs(thumbsArray) {
     image.height = "auto";
     image.id = thumbsArray[i].id;
     image.className = "thumbnailImg";
+    image.tabIndex = "1";
     thumbContainer.appendChild(image);
     console.log(image.class);
   }
